@@ -38,9 +38,7 @@
                 _fixer.Start();
 
                 Console.WriteLine(
-                    "Flux {0}: listening on port {1}. Press CTRL-C to stop.",
-                    Assembly.GetExecutingAssembly().GetName().Version,
-                    port);
+                    "Flux: listening on port {0}. Press CTRL-C to stop.", port);
 
                 while (!_stop)
                 {

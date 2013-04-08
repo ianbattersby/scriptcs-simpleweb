@@ -19,7 +19,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\..\..\Temp\SimpleWebCs\bin\</OutputPath>
+    <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -35,13 +35,19 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Fix">
-      <HintPath>..\..\packages\Fix.0.1\lib\net40\Fix.dll</HintPath>
+    <Reference Include="Fix, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Fix.0.3.2.10\lib\net40\Fix.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Flux">
-      <HintPath>..\..\packages\Flux.0.1\lib\net40\Flux.exe</HintPath>
+    <Reference Include="Flux, Version=0.3.0.4, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Flux.0.3.0.4\lib\net40\Flux.exe</HintPath>
       <Private>False</Private>
+    </Reference>
+    <Reference Include="ScriptCs.Contracts, Version=0.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\ScriptCs.Contracts.0.3.0-alpha-130408\lib\net45\ScriptCs.Contracts.dll</HintPath>
     </Reference>
     <Reference Include="Simple.Web">
       <HintPath>..\..\packages\Simple.Web.0.6.2.52146\lib\net40\Simple.Web.dll</HintPath>
@@ -55,9 +61,6 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="ScriptCs.Contracts">
-      <HintPath>..\packages\ScriptCs.Contracts.0.3.0-alpha-130406\lib\net45\ScriptCs.Contracts.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
