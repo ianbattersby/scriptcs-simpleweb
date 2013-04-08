@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScriptCs.SimpleWeb", "src\ScriptCs.SimpleWeb\ScriptCs.SimpleWeb.csproj", "{254C9A89-DC9F-4015-A971-9E514BF0D1DE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScriptCs.SimpleWebCs", "src\ScriptCs.SimpleWebCs\ScriptCs.SimpleWebCs.csproj", "{254C9A89-DC9F-4015-A971-9E514BF0D1DE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{686BA44A-12BA-478B-A26B-FAD5BD40683F}"
 	ProjectSection(SolutionItems) = preProject

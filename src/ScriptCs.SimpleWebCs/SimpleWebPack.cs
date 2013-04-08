@@ -1,11 +1,9 @@
-﻿namespace ScriptCs.SimpleWeb
+﻿namespace ScriptCs.SimpleWebCs
 {
     using System;
-    using System.Collections.Generic;
     using System.ComponentModel.Composition;
     using System.ComponentModel.Composition.Hosting;
     using System.Diagnostics;
-    using System.Linq;
     using System.Reflection;
 
     using Fix;
@@ -13,7 +11,7 @@
 
     using ScriptCs.Contracts;
 
-    public class SimpleWeb : IScriptPackContext
+    public class SimpleWebPack : IScriptPackContext
     {
         private const int ComparisonCharMatch = 3;
 
@@ -21,14 +19,9 @@
         private bool _stop;
         private readonly Assembly[] _assemblies;
 
-        public SimpleWeb()
+        public SimpleWebPack()
         {
-            this._assemblies = new[] { FindTheCallingAssembly() };
-        }
-
-        public SimpleWeb(IEnumerable<Assembly> assemblies)
-        {
-            this._assemblies = assemblies.ToArray();
+            this._assemblies = new[] { typeof(Simple.Web.Behaviors.IETag).Assembly };
         }
 
         public void StartServer(int port = 3333)
@@ -98,39 +91,6 @@
                 var container = new CompositionContainer(catalog);
 
                 container.ComposeParts(this._fixer);
-            }
-        }
-
-        public Assembly FindTheCallingAssembly()
-        {
-            var trace = new StackTrace(false);
-
-            Assembly executingAssembly = Assembly.GetCallingAssembly();
-            Assembly callingAssembly = null;
-
-            for (int i = 0; i < trace.FrameCount; i++)
-            {
-                StackFrame frame = trace.GetFrame(i);
-                Assembly assembly = frame.GetMethod().DeclaringType.Assembly;
-
-                if (IsQualifyingAssembly(assembly.FullName, executingAssembly.FullName))
-                {
-                    callingAssembly = assembly;
-                }
-            }
-
-            return callingAssembly;
-        }
-
-
-        private static bool IsQualifyingAssembly(string assemblyName, string matchAssembly)
-        {
-            for (var i = 0; ; i++)
-            {
-                if (i > ComparisonCharMatch || i > (assemblyName.Length - 1) || i > (matchAssembly.Length - 1) || assemblyName[i] != matchAssembly[i])
-                {
-                    return i >= ComparisonCharMatch;
-                }
             }
         }
     }

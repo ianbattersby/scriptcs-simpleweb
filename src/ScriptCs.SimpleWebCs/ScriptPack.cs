@@ -1,4 +1,4 @@
-﻿namespace ScriptCs.SimpleWeb
+﻿namespace ScriptCs.SimpleWebCs
 {
     using System.Linq;
 
@@ -11,6 +11,7 @@
             var namespaces = new[]
                 {
                     "Simple.Web",
+                    "Simple.Web.Behaviors",
                 };
 
             namespaces.ToList().ForEach(session.ImportNamespace);
@@ -18,7 +19,7 @@
 
         public IScriptPackContext GetContext()
         {
-            return new SimpleWeb();
+            return new SimpleWebPack();
         }
 
         public void Terminate()

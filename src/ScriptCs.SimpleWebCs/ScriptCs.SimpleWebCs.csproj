@@ -7,8 +7,8 @@
     <ProjectGuid>{254C9A89-DC9F-4015-A971-9E514BF0D1DE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ScriptCs.SimpleWeb</RootNamespace>
-    <AssemblyName>ScriptCs.SimpleWeb.Pack</AssemblyName>
+    <RootNamespace>ScriptCs.SimpleWebCs</RootNamespace>
+    <AssemblyName>ScriptCs.SimpleWebCs.Pack</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -19,7 +19,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\..\..\..\Temp\SimpleWebCs\bin\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -37,12 +37,15 @@
   <ItemGroup>
     <Reference Include="Fix">
       <HintPath>..\..\packages\Fix.0.1\lib\net40\Fix.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Flux">
       <HintPath>..\..\packages\Flux.0.1\lib\net40\Flux.exe</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Simple.Web">
       <HintPath>..\..\packages\Simple.Web.0.6.2.52146\lib\net40\Simple.Web.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
@@ -59,7 +62,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ScriptPack.cs" />
-    <Compile Include="SimpleWeb.cs" />
+    <Compile Include="SimpleWebPack.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config">
