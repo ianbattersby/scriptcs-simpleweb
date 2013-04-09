@@ -31,8 +31,7 @@ SimpleWeb.StartServer(3333);
 
 ####Install
 
-	scriptcs -install Flux
-	scriptcs -install Simple.Web
+	scriptcs -install ScriptCs.SimpleWeb
 
 ####Run
 
