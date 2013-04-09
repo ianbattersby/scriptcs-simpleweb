@@ -80,7 +80,7 @@ publish
 *.Publish.xml
 
 # NuGet Packages Directory
-packages
+# packages
 
 # Windows Azure Build Output
 csx
@@ -113,6 +113,6 @@ src/CommonAssemblyInfo.cs
 Gemfile.lock
 results
 nuget
-src/packages/*
-!src/packages/repositories.config
+packages/*
+!packages/repositories.config
 artifacts
