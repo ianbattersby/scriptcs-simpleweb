@@ -13,7 +13,7 @@
     <summary>Simple.Web pack for ScriptCs.</summary>
     <tags>scriptcs pack simpleweb owin http</tags>
     <dependencies>
-      <dependency id="Fix" version="0.3" />
+      <dependency id="Flux" version="0.3" />
       <dependency id="ScriptCs.Contracts" version="0.3" />
       <dependency id="Simple.Web" version="0.6" />
     </dependencies>
