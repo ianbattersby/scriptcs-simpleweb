@@ -42,7 +42,7 @@
       <HintPath>..\..\packages\Flux.0.3.0.4\lib\net40\Flux.exe</HintPath>
     </Reference>
     <Reference Include="ScriptCs.Contracts">
-      <HintPath>..\..\packages\ScriptCs.Contracts.0.4.0-alpha-130409\lib\net45\ScriptCs.Contracts.dll</HintPath>
+      <HintPath>..\..\packages\ScriptCs.Contracts.0.3.0\lib\net45\ScriptCs.Contracts.dll</HintPath>
     </Reference>
     <Reference Include="Simple.Web">
       <HintPath>..\..\packages\Simple.Web.0.6.2.52146\lib\net40\Simple.Web.dll</HintPath>
