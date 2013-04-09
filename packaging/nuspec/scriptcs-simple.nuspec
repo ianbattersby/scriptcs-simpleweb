@@ -19,8 +19,8 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="..\..\build\ScriptCs.SimpleWebCs.Pack.dll" target="lib\net40" />
-    <file src="..\..\build\ScriptCs.SimpleWebCs.Pack.*db" target="lib\net40" />
+    <file src="..\..\build\ScriptCs.SimpleWebCs.Pack.dll" target="lib\net45" />
+    <file src="..\..\build\ScriptCs.SimpleWebCs.Pack.*db" target="lib\net45" />
     <file src="..\..\src\**\*.cs" target="src" />
   </files>
 </package>
