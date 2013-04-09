@@ -35,23 +35,17 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Fix, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Fix">
       <HintPath>..\..\packages\Fix.0.3.2.10\lib\net40\Fix.dll</HintPath>
-      <Private>False</Private>
     </Reference>
-    <Reference Include="Flux, Version=0.3.0.4, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Flux">
       <HintPath>..\..\packages\Flux.0.3.0.4\lib\net40\Flux.exe</HintPath>
-      <Private>False</Private>
     </Reference>
-    <Reference Include="ScriptCs.Contracts, Version=0.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\ScriptCs.Contracts.0.3.0-alpha-130408\lib\net45\ScriptCs.Contracts.dll</HintPath>
+    <Reference Include="ScriptCs.Contracts">
+      <HintPath>..\..\packages\ScriptCs.Contracts.0.4.0-alpha-130409\lib\net45\ScriptCs.Contracts.dll</HintPath>
     </Reference>
     <Reference Include="Simple.Web">
       <HintPath>..\..\packages\Simple.Web.0.6.2.52146\lib\net40\Simple.Web.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
@@ -70,9 +64,7 @@
     <Compile Include="SimpleWebPack.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Condition="$(MSBuildProgramFiles32) == ''" Project="$(SolutionDir).nuget\nuget.targets" />
