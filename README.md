@@ -35,7 +35,7 @@ SimpleWeb.StartServer(3333);
 
 ####Run
 
-	scriptcs start.csx
+	scriptcs start.csx -debug    (**currently investigating why only Roslyn in debug mode works with Flux**)
 
 ####Browse
 [http://localhost:3333](http://localhost:3333)
